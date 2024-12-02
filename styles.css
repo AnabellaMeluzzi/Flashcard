@@ -122,7 +122,7 @@ form input, form textarea {
     background-color: #f7f6f3;
     color: #4a4a4a;
    
-    font-size: 0.9rem; /* Texto más pequeño */
+    font-size: 0.9rem;
 }
 
 form input:focus, form textarea:focus {
@@ -159,7 +159,6 @@ form input:focus, form textarea:focus {
     transform: translateY(-10%); 
 }
 
-/* Navigation Buttons */
 .navigation-btn {
     /* font-size: 18px;  */
     position: absolute;
@@ -342,10 +341,10 @@ form input:focus, form textarea:focus {
 
 /* Variables */
 :root {
-    --primary: #a3c9a8; /* Verde pastel */
-    --secondary: #f2cfae; /* Naranja pastel */
-    --light: #f7f6f3; /* Fondo pastel claro */
-    --dark: #4a4a4a; /* Gris sobrio */
+    --primary: #a3c9a8; 
+    --secondary: #f2cfae; 
+    --light: #f7f6f3; 
+    --dark: #4a4a4a; 
 }
 
 #card_definition{

@@ -73,12 +73,11 @@ if (card) {
         return array;
     }
 
-    // Displays the flashcard at the given index
     function showFlashcard(index) {
         if(storedFlashcards){
-flashcards=storedFlashcards
+        flashcards=storedFlashcards
         }
-console.log("muestra la carta")
+        console.log("muestra la carta")
         const flashcard = flashcards[index];
         cardConcept.textContent = flashcard.concept;
         cardDefinition.textContent = flashcard.definition;
@@ -158,7 +157,7 @@ function resetCardState(card) {
     card.style.transition = '';
 }
 
-// Load sessionStorage
+// sessionStorage
 // const storedFlashcards = JSON.parse(sessionStorage.getItem('flashcards'));
 if (storedFlashcards && card) {
     flashcards = storedFlashcards; 

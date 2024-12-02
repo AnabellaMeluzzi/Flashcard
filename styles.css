@@ -1,5 +1,4 @@
 
-/* General Styles */
 body {
     flex-direction: column;
     margin: 0;
@@ -38,7 +37,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Buttons */
 button {
     font-size: 1.5rem; 
     padding: 10px 20px; 
@@ -72,7 +70,6 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Pop-up Styles */
 .popup {
     position: fixed;
     top: 0;
@@ -124,7 +121,7 @@ form input, form textarea {
     /* font-size: 1rem; */
     background-color: #f7f6f3;
     color: #4a4a4a;
-    /*width: 100%;  Usar todo el ancho disponible */
+   
     font-size: 0.9rem; /* Texto más pequeño */
 }
 
@@ -133,7 +130,7 @@ form input:focus, form textarea:focus {
     border-color: #a3c9a8;
 }
 
-/* Pop-up Buttons */
+
 .popup-buttons {
     display: flex;
     justify-content: space-between;
@@ -146,7 +143,6 @@ form input:focus, form textarea:focus {
     font-size: 1rem;
 }
 
-/* Flashcard Container */
 .flashcard-container {
     position: relative;
     display: flex;
@@ -204,7 +200,7 @@ form input:focus, form textarea:focus {
     position: absolute;
     /* top: 10px; */
     transform: none;
-    background-color: #acd1e9; /* Azul pastel claro */
+    background-color: #acd1e9; 
     color: #4a4a4a;
 
     font-size: 20px; 
@@ -474,8 +470,8 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
-    color: #4a4a4a; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0); 
+    color: #4a4a4a; 
     padding: 10px 0;
     font-size: 1rem;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);

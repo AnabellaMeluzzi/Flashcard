@@ -11,6 +11,10 @@ body {
     height: 100vh;
     padding: 10px;
 }
+body, html {
+    overflow: hidden; 
+    height: 100%; 
+}
 
 #index {
     background-image: url('img2.jpg');
@@ -36,8 +40,8 @@ h1 {
 
 /* Buttons */
 button {
-    font-size: 1.5rem; /* Reducir el tamaño del texto en botones */
-    padding: 10px 20px; /* Botones más pequeños */
+    font-size: 1.5rem; 
+    padding: 10px 20px; 
     /* padding: 12px 25px; */
     /* font-size: 2rem; */
     border: none;
@@ -59,8 +63,8 @@ button:hover {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column; /* Botones en una sola columna */
-    gap: 10px; /* Separación adecuada entre ellos */
+    flex-direction: column;
+    gap: 10px; 
 }
 
 button:active {
@@ -93,9 +97,9 @@ button:active {
     /* max-width: 400px; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 15px; /* Espaciado más ajustado */
-    width: 100%; /* Asegurar que ocupe el ancho de la pantalla */
-    max-width: 350px; /* Límite máximo para evitar que sea demasiado ancho */
+    padding: 15px; 
+    width: 100%; 
+    max-width: 350px; 
 }
 
 .popup-content h2 {
@@ -151,13 +155,12 @@ form input:focus, form textarea:focus {
     width: 80%;
     max-width: 600px;
 
-    flex-direction: column; /* NUEVO: Apila contenido en pantallas pequeñas */
-    padding: 10px; /* NUEVO: Espaciado en móviles */
-
-    margin: 0 auto; /* Centrar horizontalmente */
-    padding: 0; /* Eliminar paddings extra */
-    top: -5%; /* NUEVO: Subir el contenedor en pantallas pequeñas */
-    transform: translateY(-10%); /* Ajustar la posición vertical */
+    flex-direction: column;
+    padding: 10px; 
+    margin: 0 auto; 
+    padding: 0; 
+    top: -5%; 
+    transform: translateY(-10%); 
 }
 
 /* Navigation Buttons */
@@ -174,16 +177,16 @@ form input:focus, form textarea:focus {
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s; 
 
-    font-size: 1.2rem; /* NUEVO: Reducir tamaño del texto en botones */
-    padding: 8px 12px; /* NUEVO: Botones más pequeños */
+    font-size: 1.2rem; 
+    padding: 8px 12px; 
 
-    z-index: 2; /* NUEVO: Prioridad sobre la tarjeta */
+    z-index: 2; 
 
 
 }
 
 .navigation-btn:hover {
-    background-color: #e3b998; /* Naranja pastel un poco más oscuro */
+    background-color: #e3b998; 
 }
 
 .left-btn {
@@ -204,23 +207,23 @@ form input:focus, form textarea:focus {
     background-color: #acd1e9; /* Azul pastel claro */
     color: #4a4a4a;
 
-    font-size: 20px; /* NUEVO: Tamaño más pequeño */
-    padding: 8px 12px; /* NUEVO: Espaciado más compacto */
-    top: 5px; /* NUEVO: Posición más alta en pantallas pequeñas */
+    font-size: 20px; 
+    padding: 8px 12px; 
+    top: 5px; 
 }
 
 #back-btn:hover, #export-btn:hover {
-    background-color: #94b9d1; /* Azul pastel más oscuro */
+    background-color: #94b9d1; 
 }
 
 #back-btn {
-    left: 5px; /* NUEVO: Ajustar posición izquierda */
+    left: 5px; 
     /* left: 10px; */
 }
 
 #export-btn {
     /* right: 10px; */
-    right: 5px; /* NUEVO: Ajustar posición derecha */
+    right: 5px; 
 }
 
 /* Card Styles */
@@ -229,22 +232,16 @@ form input:focus, form textarea:focus {
     /* width: 400px;
     height: 600px;  */
     perspective: 1000px;
-    /*width: 100%; Ajustar al ancho de la pantalla */
-    /*max-width: 300px;  Límite máximo */
-    /* height: auto; Altura automática */
+ 
 
-    /*width: 100%; NUEVO: Ajustar al ancho de la pantalla */
-   /* max-width: 300px;  NUEVO: Límite máximo para dispositivos pequeños */
-   /* height: auto; /* NUEVO: Ajustar altura automáticamente */
-
-   width: 90%; /* Usar el 90% del ancho disponible */
-   max-width: 400px; /* Limitar el tamaño en pantallas grandes */
-   height: auto; /* Permitir altura automática */
-   aspect-ratio: 2 / 3; /* NUEVO: Mantener relación de aspecto 2:3 */
+   width: 90%; 
+   max-width: 400px; 
+   height: auto; 
+   aspect-ratio: 2 / 3; 
 
 
-   z-index: 1; /* NUEVO: Prioridad visual de la tarjeta */
-   position: relative; /* Asegurar la posición independiente de los botones */
+   z-index: 1; 
+   position: relative; 
 }
 
 .card_inner {
@@ -277,7 +274,7 @@ form input:focus, form textarea:focus {
 }
 
 .card_face--front {
-    background-color: #e2d4f0; /* Lila pastel claro */
+    background-color: #e2d4f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,11 +286,11 @@ form input:focus, form textarea:focus {
 
 
     font-size: 1.5rem;
-    /* font-size: 1.5rem; Reducir tamaño del texto en tarjetas */
+    
 }
 
 .card_face--back {
-    background-color: #d5e8d4; /* Verde pastel claro */
+    background-color: #d5e8d4; 
     transform: rotateY(180deg);
 }
 
@@ -311,7 +308,7 @@ form input:focus, form textarea:focus {
     /* font-size:30px;  */
     color: #4a4a4a;
     line-height: 1.5;
-    /* font-size: 1.5rem; Reducir tamaño del texto en tarjetas */
+    
     font-size: 1.5rem;
 }
 
@@ -364,94 +361,128 @@ form input:focus, form textarea:focus {
 
 
 @media (min-width: 768px) {
-    /* Cambios para tablets y pantallas más grandes */
+
     body {
-        flex-direction: row; /* Volver a disposición horizontal */
+        flex-direction: row; 
         padding: 20px;
     }
 
     .buttons {
-        flex-direction: row; /* Botones en fila */
-        gap: 20px; /* Mayor separación entre botones */
+        flex-direction: row; 
+        gap: 20px; 
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 2rem;
     }
 
     .popup-content {
-        width: 80%; /* Aumentar el ancho en tablets */
+        width: 80%; 
         max-width: 400px;
     }
 
     .card {
-        max-width: 400px; /* Ajustar tarjetas a pantallas más grandes */
+        max-width: 400px; 
     }
 
     .card_body p, .card_face--front h2 {
-        font-size: 2rem; /* Texto más grande */
+        font-size: 2rem; 
     }
 
     .flashcard-container {
-        flex-direction: row; /* Contenido en fila para pantallas medianas */
-        padding: 20px; /* Más espaciado */
-        top: 10%; /* Ajustar posición superior para pantallas pequeñas */
+        flex-direction: row; 
+        padding: 20px; 
+        top: 10%;
         transform: translateY(-5%);
         align-items: center !important;
     }
 
     .navigation-btn {
-        font-size: 1.5rem; /* Botones más grandes */
-        padding: 10px 15px; /* Ajustar espaciado */
+        font-size: 1.5rem; 
+        padding: 10px 15px; 
 top:40%;
         
     }
 
     .left-btn {
-        left: 2cqb; /* Posición original */
+        left: 2cqb; 
         
     }
 
     .right-btn {
-        right: 20px; /* Posición original */
+        right: 20px; 
     }
 
     #back-btn, #export-btn {
-        font-size: 24px; /* Tamaño original */
-        padding: 12px 18px; /* Espaciado original */
+        font-size: 24px; 
+        padding: 12px 18px;
 
         position: absolute;
-    top: 10px; /* Posición fija en la parte superior */
-    z-index: 3; /* Asegurar que siempre estén visibles */
+    top: 10px; 
     }
-
-
-    @media (min-width: 1024px) {
-        .flashcard-container {
-            top: -2%; /* Dejar más espacio en pantallas grandes */
-            transform: translateY(-15%);
-            align-items: center !important;
-        }
-        /* NUEVO: Cambios para pantallas grandes */
-        .card {
-            max-width: 400px !important; /* Mayor tamaño para tarjetas */
-            max-height: 600px !important;
-        }
     
-        .card_face--front h2 {
-            font-size: 40px;
-        }
-        .card_body p{
-            font-size: 1.5rem; /* Texto más grande */
-        }
 
-        .navigation-btn {
-           
-    top:55%;
-            
-        }
+
+
+   
+
+}
+@media (min-width: 1024px) {
+    button {
+        padding: 12px 25px;
+        font-size: 2rem;
+    }
+    .flashcard-container {
+        top: -2%; 
+        transform: translateY(-15%);
+        align-items: center !important;
+    }
+    button {
+        padding: 12px 25px;
+        font-size: 2rem;
+    }
+    .card {
+        max-width: 400px !important; 
+        max-height: 600px !important;
+    }
+ h1{
+    font-size: 2.5rem;
+ }
+    .card_face--front h2 {
+        font-size: 40px;
+    }
+    .card_body p{
+        font-size: 1.5rem; 
     }
 
+    .navigation-btn {
+       
+    top:55%;
+        
+    }
+
+    h6{
+        font-size: 1rem;
+    }
 }
 
 
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
+    color: #4a4a4a; /* Color del texto */
+    padding: 10px 0;
+    font-size: 1rem;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
 
-
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 

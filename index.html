@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+</head>
+<body id="index">
+    <div class="container">
+        <h1>Welcome to Flashcards!</h1>
+        <h6>By Redi School</h6>
+        <div class="buttons">
+            <button id="learn-btn" onclick="learnBtn()">Learn with Flashcards</button>
+            <button id="add-btn" onclick="addButton()">Create a new Flashcard</button>
+        </div>
+    </div>
+
+    <!-- Pop-up Form -->
+    <div id="popup-form" class="popup hidden">
+        <div class="popup-content">
+            <h2>New Flashcard</h2>
+            <form novalidate id="flashcard-form">
+                <label for="concept">Concept:</label>
+                <input type="text" id="concept" name="concept" maxlength="50" required>
+                <label for="definition">Definition:</label>
+                <textarea id="definition" name="definition" maxlength="200" rows="4" required lang="en"></textarea>
+                <div class="popup-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="close-popup" onclick="closePopup()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
